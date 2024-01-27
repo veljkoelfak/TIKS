@@ -1,0 +1,117 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('./resources/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  font-family: 'Courier New', monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.side-tabs {
+  display: flex;
+  flex-direction: row;
+  width: 200px; /* Adjust the width as needed */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  color: white;
+  padding-left: 2%;
+  margin-bottom: 10vh;
+  
+}
+
+.tab-item {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, margin-right 0.3s ease-in-out;
+  height: 200%; 
+  border: 3px solid white; /* Add a white outline */
+  margin-right: 10%;
+  border-radius: 5px;
+  background-color: #ff1100;
+}
+
+.tab-item:hover {
+  transform: scale(1.2);
+}
+
+.tab-item.active {
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+.content-container {
+  margin-left: 200px; /* Adjust the margin to make space for the tabs */
+}
+
+.msdos-container {
+  width: 100%;
+  max-width: 100%;
+  margin-top: auto;
+}
+
+.msdos-bottom-bar {
+  background-color: grey;
+  padding: 10px;
+  border: 1px solid #b6b6b6;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.msdos-start {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #b6b6b6;
+  min-width: 100px;
+  background-color: #ff1100;
+}
+.msdos-image{
+  width: 3.5vh;
+  height: 3.5vh;
+  margin-top: 6%;
+  margin-right: 4%;
+  padding: 2%
+}
+
+.msdos-p{
+  margin-right: 10%;
+  color: white;
+}
+

@@ -1,0 +1,100 @@
+.subjects-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-width: 20vh; /* Add a white outline */
+  padding: 2vh;
+}
+
+.terminal-button {
+  background-color: white;
+  color: black;
+  border: 3px solid #860900;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  margin-bottom: 5%;
+  font-family: 'Courier New', monospace;
+  font-size: 1.8vh;
+  border-radius: 5px;
+}
+
+.terminal-button:hover {
+  background-color: #ff1100;
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+label {
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  margin-top: 3%;
+}
+
+.output-console{
+  align-items: left; 
+  border: 3px solid #fff;
+  min-width: 68vh; /* Add a white outline */
+  padding: 2vh;
+  margin-left: 3vh;
+  min-height: 50vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  padding-right: 20px;
+  color: white;
+  border-bottom: 2px solid gray;
+  position: relative; /* Add this line */
+  font-family: 'Courier New', monospace;
+}
+
+.cursor {
+  width: 10px;
+  height: 1em;
+  background-color: #ffffff;
+  position: absolute; /* Change this line to absolute */
+  top: 20px; /* Add this line */
+  right: 10px; /* Add this line */
+  animation: cursorAnimation 1s infinite;
+}
+
+@keyframes cursorAnimation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.console-data {
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+.console-text {
+  white-space: pre-line
+}
